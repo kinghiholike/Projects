@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="shortcut icon"
+      href="img/pexels-anna-zhilina-5512097.jpg"
+      type="image/x-icon"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stlyesSheet.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+      <!--Home page title-->
+    <title>Conference</title>
+
+    <!---->
+
+    <!-- <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+    
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+    
+      // Get today's date and time
+      var now = new Date().getTime();
+    
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+    
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+    
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+      }
+    }, 1000);
+    </script> -->
+  </head>
+  <body class="">
+    <div id="body"></div>
+    <nav class="navbar sticky-top dark bg-primary">
+      <div class="container-fluid">
+        <!-- Link to html home page-->
+        <a class="navbar-brand" href="home.html">CONFERENCE</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <!--Navigation Bar-->
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <!--Link to the speakers page-->
+              <a class="nav-link" href="speakers.html">speakers</a>
+            </li>
+            <!--Dropdown menu-->
+            <li class="nav-item dropdown">
+
+              <!--Tag for the topics and their html page-->
+              <a
+                class="nav-link dropdown-toggle"
+                href="topics.html"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+
+              <!--Main Drop down menu-->
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="topics.html">Conference Topic</a></li>
+                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                <li><hr class="dropdown-divider"/></li>
+                <li>
+                  <a class="dropdown-item" href="events.html">Upcoming-event</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <!--Contacts Page-->
+              <a class="nav-link" href="Contacts.html">Contacts</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+
+              <!--Search bar in html home page-->
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="part_one d-flex w-100 text-center flex-column">
+      <div class="background-image d-flex flex-column align-items-center">
+        <div class="text-white w-75">
+
+          <!--introduction to what the page is about-->
+          <p class="fs-1 m0">WELCOME TO OUR</p>
+          <h1>TECHNOLOGY CONFERENCE</h1>
+          <p>
+            The conference includes top keynotes, over 10 sessions, and plenty
+            of opportunities for networking with topics that span the Cloud,
+            Atificial inteligance, Machine Learning, Cyber Security , research
+            and development.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="part_two container-fluid">
+      <div
+        class="d-flex flex-column text-center justify-content-center align-items-center"
+      >
+      <!--Topics Introduction-->
+        <h1>Conference Topics</h1>
+        <!--Class defintion-->
+        <div class="orange"></div>
+        <p class="w-50" style="color: black">
+          These inspiring, sometimes frightening presentations detail how
+          technologies from bionics to big data to machine learning will change
+          our world for good or ill -- and sooner than you might think.
+        </p>
+
+        <!--Confrence cards-->
+        <ol
+          class="w-75 d-flex gap-4 justify-content-around flex-wrap"
+          style="list-style-type: none"
+          id="conference-cards"
+        >
+        <!--Backbround of the topics-->
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/biometrics">
+
+              <!--First topics AI-->
+              <img src="img\biometrics.jfif" alt="ai" /> <br />
+              <h3 class="">Biometrics.</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/complex-systems">
+              <img src="img\complex systems.jfif" alt="" /> <br />
+              <!--Second topic machine learning-->
+              <h3>Complex systems.</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/health-it">
+              <img src="img\health it.jfif" alt="ai" /> <br />
+              <!--Third topic -->
+              <h3>Health it</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://techmonitor.ai/technology/can-us-stop-china-rise-in-quantum-computing">
+              <img src="img\quntam.jfif" alt="" /> <br />
+              <!--4th topic-->
+              <h3>Quntam computing</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/artificial-intelligence">
+              <img src="img\ai.jpg" alt="ai" /> <br />
+              <!--5th topic-->
+              <h3>Artficail Inteligence</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/machine-learning">
+              <img src="img\machine learning.jpg" alt="" /> <br />
+              <!--6th topic-->
+              <h3>Machine Learning</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="https://www.nist.gov/cybersecurity">
+              <img src="img\cyber.jpg" alt="" /> <br />
+              <!--7th topic-->
+              <h3>Cyber Security</h3>
+            </a>
+          </li>
+          <li class="col-6 col-md-3">
+            <a href="What is cloud computing.pdf">
+              <img src="img\cloud computing.jpg" alt="" /> <br />
+
+              <!--Last but not least topic-->
+              <h3>Cloud Computing</h3>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </div>
+    <hr class="container my-5" />
+    <div
+      class="container d-flex flex-column align-items-center text-center"
+      id="part3"
+    >
+      <p class="fw-bold text-primary">
+        BECOME A PART OF THE BIGGEST conference
+      </p>
+      <h1 class="fs-3">
+
+        <!--Registration to the conferance-->
+        BLOGGING CONFERENCE OF 2022 BY SIGNING UP AS AN OFFICIAL ATTENDEE
+      </h1>
+      <a href="register.html" class="btn btn-outline-primary btn-lg">Register</a>
+    </div>
+    <hr class="container my-5" />
+    <div class="part_four d-flex flex-column align-items-center">
+      <h1 style="text-align: center; margin-top: 2rem">Invited SPEAKERS</h1>
+      <div class="row container my-5">
+        <div class="speaker_one col-md-4">
+          <img src="img\aron.jpg" alt="" width="300" height="300" />
+
+          <!--Invited spaekers-->
+          <h3>Dr Aron Indongo</h3>
+          <p>Software Developer, Data Security</p>
+          <p>
+            Dr Indongo is currently studing a masters in data security/data
+            sceince,at the Namibia University of Sceince and Technolgy.
+          </p>
+        </div>
+        <div class="speaker_two col-md-4">
+          <img src="img\king.jpg" alt="" width="300" height="300" />
+          <!--Second speaker-->
+          <h3>Dr King Hiholike</h3>
+          <p>Software Developer, Data Sceintist</p>
+          <p>
+            Dr Hiholike studied at the Namibaia University Of Sceince and
+            Technolgy , he is currently pursuing his degree in Masters in
+            Artficail Inteligence.
+          </p>
+        </div>
+        <div class="speaker_three col-md-4">
+          <img src="img\likius daniel.jpg " alt="" width="300" height="300" />
+          <h3>Professor Likius Daniel</h3>
+          <!--last speaker-->
+          <p>Lecture and the University of Namibia</p>
+          <p>
+            Professor Daniel studied Cyper Security and Japan , and is currently
+            a part-time Lecture at UNAM.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mb-5">
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+            <!--Testimonies relating to the topics coverd-->
+
+
+            <!--Amazon testimony-->
+              1. AI - Amazon
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Undoubtedly, Amazon is the big brand that has adopted AI at first
+              and highly benefited from this trending technology. Let me explain
+              one of the best use cases of Artificial intelligence.Amazon has
+              launched a convenience store with the power of AI in Seattle, with
+              an aim to avoid check out which is the least favorite shopping
+              experience of everyone. With ceiling-mounted cameras and sensors
+              backed by AI, now Amazon can simply track every customer’s
+              interaction with a product.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+
+            <!--hackers target covid19 results-->
+            2. Cyber Security/Hackers try to meddle with the coronavirus
+            pandemic response
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Users of internet forum 4chan, which is now a breeding ground for
+              alt-right groups, circulated over 2,000 passwords they claimed were
+              linked to WHO email accounts, according to Bloomberg. Details spread
+              to Twitter and other social media sites, where far-right political
+              groups claimed the WHO had been attacked in a bid to undermine the
+              perceived veracity of public health guidelines. “There is definitely
+              a political aspect to many [cyberattacks] and they will sometimes do
+              it to gain a political advantage or send a message to an adversary,”
+              said Adams. “Or maybe it’s just to put that adversary on the
+              defensive to see how they behave.” In another example of hackers
+              seizing upon the pandemic zeitgeist, some sent phishing emails
+              impersonating the WHO and urging the general public to donate to a
+              fictitious coronavirus response fund, not the real COVID-19
+              Solidarity Response Fund.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+            <!--Deep learning -->
+            3. Deep Learning
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              We end this historical study with a video on the “darling” of the
+              machine learning community: deep learning. Although Yann Le Cun has
+              given the first part of this same talk in several keynotes, the
+              following segment provides a sound general introduction to Deep
+              Learning, covering much of its history in the process. The
+              interesting part comes after min 44:06 when Le Cun discusses open
+              problems in AI.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="testimonials">
+      <h1>Testimonials</h1>
+
+      <ol>
+        <li>
+          <p><b>AI - Amazon</b></p>
+          <p>
+            Undoubtedly, Amazon is the big brand that has adopted AI at first
+            and highly benefited from this trending technology. Let me explain
+            one of the best use cases of Artificial intelligence.Amazon has
+            launched a convenience store with the power of AI in Seattle, with
+            an aim to avoid check out which is the least favorite shopping
+            experience of everyone. With ceiling-mounted cameras and sensors
+            backed by AI, now Amazon can simply track every customer’s
+            interaction with a product.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b
+              >Cyber Security/Hackers try to meddle with the coronavirus
+              pandemic response</b
+            >
+          </p>
+          <p>
+            Users of internet forum 4chan, which is now a breeding ground for
+            alt-right groups, circulated over 2,000 passwords they claimed were
+            linked to WHO email accounts, according to Bloomberg. Details spread
+            to Twitter and other social media sites, where far-right political
+            groups claimed the WHO had been attacked in a bid to undermine the
+            perceived veracity of public health guidelines. “There is definitely
+            a political aspect to many [cyberattacks] and they will sometimes do
+            it to gain a political advantage or send a message to an adversary,”
+            said Adams. “Or maybe it’s just to put that adversary on the
+            defensive to see how they behave.” In another example of hackers
+            seizing upon the pandemic zeitgeist, some sent phishing emails
+            impersonating the WHO and urging the general public to donate to a
+            fictitious coronavirus response fund, not the real COVID-19
+            Solidarity Response Fund.
+          </p>
+        </li>
+        <li>
+          <p><b>Deep Learning </b></p>
+          <p>
+            We end this historical study with a video on the “darling” of the
+            machine learning community: deep learning. Although Yann Le Cun has
+            given the first part of this same talk in several keynotes, the
+            following segment provides a sound general introduction to Deep
+            Learning, covering much of its history in the process. The
+            interesting part comes after min 44:06 when Le Cun discusses open
+            problems in AI.
+          </p>
+        </li>
+      </ol>
+    </div> -->
+
+
+
+
+    <div class="part_fiveclass col-md-4">
+      <!--All upcoming events-->
+      <h1>Up coming events</h1>
+
+
+      <ol>
+        <li>
+          <img src="img\cloud computing.jpg" alt=""width="300" height="300"/>
+          <h2>Cloude Computing</h2>
+          <p>asperiores expedita exercitationem</p>
+        </li>
+        <li>
+          <img src="img\data sceince.jpg" alt=""width="300" height="300"/>
+          <h2>Data Security</h2>
+          <p>exercitationem ex sapi</p>
+        </li>
+        <li>
+          <img src="img\big data.jpg" alt=""width="300" height="300"/>
+          <h2>Big Data</h2>
+          <p>exercitationem ex sapi</p>
+        </li>
+      </ol>
+    </div>
+
+    <footer>
+      <h3>Subcribe to our new latter</h3>
+      <h4>UP-TO-DATE WITH THE SCHEDULE!</h4>
+    </footer>
+    <script src="js/bootstrap.js"></script>
+  </body>
+</html>

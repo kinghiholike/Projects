@@ -1,0 +1,66 @@
+.speaker_one {
+    width: 20rem;
+    height: 30rem;
+    background: green;
+    
+}
+/*Speaker 1*/
+.speaker_one img {
+    width: 20rem;
+}
+<!---->
+
+.speaker_one h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.speaker_one p {
+    width: 16rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+/*Speaker 2*/
+
+.speaker_two {
+    width: 20rem;
+    height: 30rem;
+    background: green;
+    margin-top: 1rem;
+}
+
+.speaker_two img {
+    width: 20rem;
+}
+/*  Speaker 2*/
+.speaker_two h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.speaker_two p {
+    width: 16rem;
+    margin-top: 1rem;
+    text-align: left;
+}
+/*Speaker 3*/
+.speaker_three {
+    width: 20rem;
+    height: 30rem;
+    background: green;
+}
+
+.speaker_three img {
+    width: 20rem;
+}
+
+.speaker_three h3 {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.speaker_three p {
+    width: 16rem;
+    margin-top: 1rem;
+    text-align: left;
+}
